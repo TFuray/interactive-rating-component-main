@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+@layer base {
+  html {
+font-family: 'Roboto', sans-serif;
+  }
+}
+
+
+body {
   background-color: rgb(20, 21, 25) ;
 }
