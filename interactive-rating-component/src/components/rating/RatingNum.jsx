@@ -1,18 +1,15 @@
-const RatingNum = ({ num }) => {
+import { useState } from "react"
+
+const RatingNum = ({ num, rating }) => {
+
+
   return (
-    <div
-      className="
-      h-12
-      w-12
-      rounded-full
-      bg-slate-700
-      flex
-      justify-center
-      items-center
-"
-    >
-      <div className="text-gray-500 font-bold">{num}</div>
-    </div>
+    <>
+        <div className=" h-12 w-12 rounded-full flex justify-center items-center text-white font-bold hover:bg-orange-500  hover:text-white ">
+          <div className=" ">{num}</div>
+        </div>
+
+    </>
   )
 }
 export default RatingNum
